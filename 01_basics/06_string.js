@@ -29,3 +29,4 @@ console.log(trimmer.trim()); // theMAn
 const bra = "http://www.codewithharry.comakjdsfljajlfjdaslkdfj";
 console.log(bra.replace("comakjdsfljajlfjdaslkdfj", "com")); // https://www.codewithharry.comakjdsfljajlfjdaslkdfj
 console.log(bra.includes("codewithharry")); // true
+console.log(bra.split("/")); // [ 'http:', '', 'www.codewithharry.comakjdsfljajlfjdaslkdfj' ]
