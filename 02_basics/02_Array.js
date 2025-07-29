@@ -1,11 +1,11 @@
 const marvel_heroes = ["IronMan", "thor", "spiderman"]
 const dc = ["superman", "batman", "flash"]
-/* marvel_heroes.push(dc) */
-/* console.log(marvel_heroes)
-console.log(marvel_heroes[3][1]) */
-/* 
+marvel_heroes.push(dc)
+ console.log(marvel_heroes)
+//console.log(marvel_heroes[3][1])
+
 marvel_heroes.concat(dc)//concatenation
-console.log(marvel_heroes) */
+console.log(marvel_heroes) 
 
 const hello = [...marvel_heroes, ...dc]//spread the array
 console.log(hello)
@@ -16,7 +16,8 @@ console.log(an)
 
 
 
-console.log(Array.isArray("sharad"))//asking is this array ans false
+console.log(Array.isArray("ro"
+))//asking is this array ans false
 
 console.log(Array.from("sharad"))//asking is this array got converted into it
 

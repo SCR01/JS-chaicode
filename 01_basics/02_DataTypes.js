@@ -28,8 +28,10 @@ let str2 = "world";
 let str3 = str1 + str2;
 console.log(str3); // "hello world"
 
-console.log("1" + 2); // "12"
-console.log(1 + "2"); // "12"   
+let a2 = console.log("1" + 2); // "12"
+
+let a3 =console.log(1 + "2"); // "12"   
+
 console.log(1 + 2 + "3"); // "33"
 
 let kal =  100;
