@@ -13,3 +13,21 @@ if(email){
 
 Truthy valuse = "0", 'false', " ", [],{}, function(){}
  */
+
+//Nullish Coalescing operator (??) null undefined
+let val1;
+
+//val1 = null ?? 10
+
+//val1 = undefined ?? 15
+
+val1 = null??10??20
+
+console.log(val1)
+
+//Terniary operator
+
+//condition ? true : false
+
+const ice = 1000;
+ice>= 80 ? console.log("hadsfh") : console.log("assdhfj")
