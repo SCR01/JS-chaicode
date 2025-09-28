@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai and js</title>
+</head>
+<body style="background-color: grey; color: white;">
+    <div>
+        <ul class="language">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>C++</li>
+            <li>Java</li>
+            <li>Ruby</li>
+            <li>PHP</li>
+            <li>Swift</li>
+            <li>Kotlin</li>
+        </ul>
+    </div>
+    
+</body>
+<script>
+    //basic way to add new element
+function addLang(lang){
+        const li = document.createElement('li')
+        li.innerText = `${lang}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLang('Go')
+    addLang('Rust')
+
+    //optimize way
+    function addLng(lang){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(lang))//more better way to create an element
+        document.querySelector('.language').appendChild(li)
+    
+}
+addLang('Dart')
+
+
+//Edit element
+const secondLang = document.querySelector("li:nth-child(2)")
+  const newLi = document.createElement('li')
+  newLi.textContent = 'html5'
+  secondLang.replaceWith(newLi)
+
+  //edit
+  const secondLang1 = document.querySelector("li:first-child")
+  secondLang1.outerHTML = "<li>Tampura</li>"
+
+  //Remove
+  const last = document.querySelector('li:last-child')
+  last.remove()
+</script>
+</html>
